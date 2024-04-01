@@ -15,7 +15,7 @@ locals {
 data "aws_caller_identity" "current" {}
 
 module "key_pair_vpn" {
-  source             = "squareops/keypair/aws"
+  source             = "git@github.com:atmosly/opentofu-aws-keypair.git"
   key_name           = format("%s-%s-vpn", local.environment, local.name)
   environment        = local.environment
   ssm_parameter_path = format("%s-%s-vpn", local.environment, local.name)
@@ -69,7 +69,7 @@ module "kms" {
 
 
 module "vpc" {
-  source                                          = "squareops/vpc/aws"
+  source                                          = "git@github.com:atmosly/opentofu-aws-vpc.git"
   name                                            = local.name
   region                                          = local.region
   vpc_cidr                                        = local.vpc_cidr

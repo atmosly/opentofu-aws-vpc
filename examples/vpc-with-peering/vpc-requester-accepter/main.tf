@@ -8,7 +8,7 @@ locals {
 }
 
 module "vpc_accepter" {
-  source                = "squareops/vpc/aws"
+  source                = "git@github.com:atmosly/opentofu-aws-vpc.git"
   name                  = "accepter"
   vpc_cidr              = "10.10.0.0/16"
   environment           = "dev"
@@ -17,7 +17,7 @@ module "vpc_accepter" {
 }
 
 module "vpc_requester" {
-  source                = "squareops/vpc/aws"
+  source                = "git@github.com:atmosly/opentofu-aws-vpc.git"
   name                  = "requester"
   vpc_cidr              = "172.10.0.0/16"
   environment           = "uat"

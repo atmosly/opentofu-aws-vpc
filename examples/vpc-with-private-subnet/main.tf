@@ -11,7 +11,7 @@ locals {
 }
 
 module "vpc" {
-  source                 = "squareops/vpc/aws"
+  source                 = "git@github.com:atmosly/opentofu-aws-vpc.git"
   name                   = local.name
   vpc_cidr               = local.vpc_cidr
   environment            = local.environment

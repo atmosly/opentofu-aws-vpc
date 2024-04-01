@@ -12,7 +12,7 @@ locals {
 }
 
 module "vpc_peering" {
-  source               = "squareops/vpc/aws//modules/vpc_peering"
+  source               = "git@github.com:atmosly/opentofu-aws-vpc.git//modules/vpc_peering"
   accepter_name        = local.accepter_name
   accepter_vpc_id      = local.accepter_vpc_id
   accepter_vpc_region  = local.accepter_region

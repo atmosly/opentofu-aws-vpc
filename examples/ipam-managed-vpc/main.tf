@@ -12,7 +12,7 @@ locals {
 }
 
 module "vpc_ipam" {
-  source = "squareops/vpc/aws"
+  source = "git@github.com:atmosly/opentofu-aws-vpc.git"
 
   name = local.name
 

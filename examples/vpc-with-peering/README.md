@@ -10,21 +10,23 @@ To run this example you need to execute this module in two parts :
 
     ```bash
     $ cd vpc-requester-accepter
-    $ terraform init
-    $ terraform plan
-    $ terraform apply
+    $ tofu init
+    $ tofu validate
+    $ tofu plan
+    $ tofu apply
     ```
 2. Copy the VPC id from the output and update in root (peering) main.tf locals block.
 
 3. Execute the below command for peering of created VPC:
 
     ```bash
-    $ terraform init
-    $ terraform plan
-    $ terraform apply
+    $ tofu init
+    $ tofu validate
+    $ tofu plan
+    $ tofu apply
     ```
 
-Note that this example may create resources which can cost money (AWS Elastic IP, for example). Run `terraform destroy` when you don't need these resources.
+Note that this example may create resources which can cost money (AWS Elastic IP, for example). Run `tofu destroy` when you don't need these resources.
 
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -40,7 +42,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_vpc_peering"></a> [vpc\_peering](#module\_vpc\_peering) | squareops/vpc/aws//modules/vpc_peering | n/a |
+| <a name="module_vpc_peering"></a> [vpc\_peering](#module\_vpc\_peering) | git@github.com:atmosly/opentofu-aws-vpc.git//modules/vpc_peering | n/a |
 
 ## Resources
 

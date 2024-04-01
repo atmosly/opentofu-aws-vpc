@@ -8,12 +8,13 @@ MUltiple CIDRs can be attached with a VPC in addition of increasing numbers of I
 To run this example you need to execute:
 
 ```bash
-$ terraform init
-$ terraform plan
-$ terraform apply
+$ tofu init
+$ tofu validate
+$ tofu plan
+$ tofu apply
 ```
 
-Note that this example may create resources which can cost money (AWS Elastic IP, for example). Run `terraform destroy` when you don't need these resources.
+Note that this example may create resources which can cost money (AWS Elastic IP, for example). Run `tofu destroy` when you don't need these resources.
 
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -29,7 +30,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | squareops/vpc/aws | n/a |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | git@github.com:atmosly/opentofu-aws-vpc.git | n/a |
 
 ## Resources
 

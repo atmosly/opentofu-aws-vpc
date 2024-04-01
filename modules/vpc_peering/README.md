@@ -11,12 +11,13 @@ Supported peering configurations:
 To run this example you need to execute:
 
 ```bash
-$ terraform init
-$ terraform plan
-$ terraform apply
+$ tofu init
+$ tofu validate
+$ tofu plan
+$ tofu apply
 ```
 
-Note that this example may create resources which can cost money (AWS Elastic IP, for example). Run `terraform destroy` when you don't need these resources.
+Note that this example may create resources which can cost money (AWS Elastic IP, for example). Run `tofu destroy` when you don't need these resources.
 
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
